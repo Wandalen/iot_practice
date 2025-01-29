@@ -14,9 +14,9 @@
 - ✅ [C4 - Architecture Diagram - Context Level](/architecture/Context.png)
 - ✅ [C4 - Architecture Diagram - Container Level](/architecture/Container.png)
 - ✅ [C4 - Architecture Diagram - Component Level](/architecture/Component.png)
-- ❌ Azure/AWS Cost Calculator
+- ✅ [Azure/AWS Cost Calculator](./cost_estimate.md)
 - ✅ [Credentials Instructions](./secret/README.md)
-- ✅ [IoT Device(or simulator) code](https://azure-samples.github.io/raspberry-pi-web-simulator/)
+- ✅ [IoT Device(or simulator) code](./devsim.py)
 - ✅ [MQTT broker service](https://portal.azure.com/#@levchenkoden20gmail.onmicrosoft.com/resource/subscriptions/bcf62ce6-f30a-4cb1-9485-85a712cc619d/resourceGroups/SIMS/providers/Microsoft.Devices/IotHubs/iot-practicehub/Overview)
 - ✅ [Data storage](https://portal.azure.com/#@levchenkoden20gmail.onmicrosoft.com/resource/subscriptions/bcf62ce6-f30a-4cb1-9485-85a712cc619d/resourceGroups/SIMS/providers/Microsoft.DBforPostgreSQL/serverGroupsv2/iot-practice-db/overview)
 - ✅ [REST API](./src/routes/mod.rs)
@@ -34,8 +34,8 @@
 - ✅ [IoT Device Configuration (e.g. Azure Device Twins)](https://portal.azure.com/#@levchenkoden20gmail.onmicrosoft.com/resource/subscriptions/bcf62ce6-f30a-4cb1-9485-85a712cc619d/resourceGroups/SIMS/providers/Microsoft.Devices/IotHubs/iot-practicehub/DeviceExplorer)
 - ✅ [Are there any 3rd party services used? (not Azure/AWS) - Terraform](./deploy/README.md)
 - ✅ [Number of connected](https://portal.azure.com/#@levchenkoden20gmail.onmicrosoft.com/resource/subscriptions/bcf62ce6-f30a-4cb1-9485-85a712cc619d/resourceGroups/SIMS/providers/Microsoft.Devices/IotHubs/iot-practicehub/DeviceExplorer)
-- ✅ [IoT devices (or simulators)](https://azure-samples.github.io/raspberry-pi-web-simulator/)
-- ✅ [Number of used AWS/Azure services - 3 ](https://portal.azure.com/#@levchenkoden20gmail.onmicrosoft.com/resource/subscriptions/bcf62ce6-f30a-4cb1-9485-85a712cc619d/resourceGroups/SIMS/overview)
+- ✅ [IoT devices (or simulators)](./devsim.py)
+- ✅ [Number of used AWS/Azure services - 4 ](https://portal.azure.com/#@levchenkoden20gmail.onmicrosoft.com/resource/subscriptions/bcf62ce6-f30a-4cb1-9485-85a712cc619d/resourceGroups/SIMS/overview)
 
 ## Try it out!
 
