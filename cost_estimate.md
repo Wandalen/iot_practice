@@ -4,6 +4,7 @@
 The **Microsoft Azure Pricing Calculator** was used to estimate the monthly costs for the services required by the IoT SIMS project. Below is a breakdown of the calculated costs:
 [Download ExportedEstimate.xlsx](ExportedEstimate.xlsx)
 
+[Calculation](https://azure.microsoft.com/en-us/pricing/calculator/)
 ![alt text](./assets/image.png)
 
 ## Budget Limit and Alerts
