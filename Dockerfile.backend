@@ -1,0 +1,34 @@
+# Stage 1: Build the application
+FROM rust:1.81 AS builder
+
+# Set the working directory inside the container
+WORKDIR /usr/src/
+
+# Copy the source code to the container
+COPY . .
+
+ENV SQLX_OFFLINE=true
+
+# Build the application
+RUN cargo build --release --bin iot_practice && mv target/release/iot_practice ./iot_practice
+
+# Stage 2: Create the final image based on the compiled Rust binary
+FROM debian:bookworm-slim AS runtime
+
+ARG DATABASE_URL
+ENV DATABASE_URL=$DATABASE_URL
+
+WORKDIR /usr/app
+
+# Install necessary packages for building and running the application
+RUN apt-get update && apt-get install -y lld clang pkg-config libssl-dev ca-certificates curl
+
+# Cleanup
+RUN apt autoremove -y \
+    && rm -rf /var/lib/apt/lists/*
+
+# Copy the compiled binary from the builder stage
+COPY --from=builder /usr/src/iot_practice .
+
+CMD [ "./iot_practice" ]
+# CMD [ "tail", "-f", "/dev/null" ]

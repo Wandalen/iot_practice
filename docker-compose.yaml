@@ -1,0 +1,16 @@
+services:
+  simulator:
+    build:
+      context: .
+      dockerfile: ./Dockerfile.sim
+      args:
+        - PY_CONNECTION_STRING=$PY_CONNECTION_STRING
+  backend:
+    build:
+      context: .
+      dockerfile: ./Dockerfile.backend
+      args:
+        - DATABASE_URL=$DATABASE_URL
+    ports:
+      - 8080:8080
+

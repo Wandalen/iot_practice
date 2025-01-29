@@ -1,0 +1,8 @@
+CREATE TABLE IF NOT EXISTS iot_sensors_data (
+    id SERIAL PRIMARY KEY,
+    device_id TEXT NOT NULL,
+    temperature DOUBLE PRECISION NOT NULL,
+    humidity DOUBLE PRECISION NOT NULL,
+    timestamp TIMESTAMP WITHOUT TIME ZONE NOT NULL,
+    weight DOUBLE PRECISION NOT NULL
+);

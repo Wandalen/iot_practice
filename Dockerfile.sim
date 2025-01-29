@@ -1,0 +1,12 @@
+FROM python:3
+
+ARG PY_CONNECTION_STRING
+ENV PY_CONNECTION_STRING=$PY_CONNECTION_STRING
+
+WORKDIR /usr/app
+
+RUN pip install --no-cache-dir azure-iot-device
+
+COPY devsim.py devsim.py
+
+CMD [ "python", "./devsim.py" ]

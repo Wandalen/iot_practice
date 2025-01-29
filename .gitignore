@@ -1,0 +1,11 @@
+.secret
+.secret.md
+
+.env
+
+target/
+
+secret/-*
+
+deploy/.terraform*
+deploy/terraform.tfstate*

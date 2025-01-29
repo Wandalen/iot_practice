@@ -1,0 +1,50 @@
+{
+  "db_name": "PostgreSQL",
+  "query": "SELECT * FROM iot_sensors_data",
+  "describe": {
+    "columns": [
+      {
+        "ordinal": 0,
+        "name": "id",
+        "type_info": "Int4"
+      },
+      {
+        "ordinal": 1,
+        "name": "device_id",
+        "type_info": "Text"
+      },
+      {
+        "ordinal": 2,
+        "name": "temperature",
+        "type_info": "Float8"
+      },
+      {
+        "ordinal": 3,
+        "name": "humidity",
+        "type_info": "Float8"
+      },
+      {
+        "ordinal": 4,
+        "name": "timestamp",
+        "type_info": "Timestamp"
+      },
+      {
+        "ordinal": 5,
+        "name": "weight",
+        "type_info": "Float8"
+      }
+    ],
+    "parameters": {
+      "Left": []
+    },
+    "nullable": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  "hash": "3c136192282ada3254b4db01039a04a989f2e97bf7b2f9a1833964652554da09"
+}

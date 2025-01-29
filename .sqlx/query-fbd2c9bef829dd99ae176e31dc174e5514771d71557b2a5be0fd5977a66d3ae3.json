@@ -1,0 +1,48 @@
+{
+  "db_name": "PostgreSQL",
+  "query": "\n            SELECT id, login, password_hash, role as \"role: StaffRole\"\n            FROM staff_accounts\n            ",
+  "describe": {
+    "columns": [
+      {
+        "ordinal": 0,
+        "name": "id",
+        "type_info": "Int4"
+      },
+      {
+        "ordinal": 1,
+        "name": "login",
+        "type_info": "Varchar"
+      },
+      {
+        "ordinal": 2,
+        "name": "password_hash",
+        "type_info": "Varchar"
+      },
+      {
+        "ordinal": 3,
+        "name": "role: StaffRole",
+        "type_info": {
+          "Custom": {
+            "name": "staff_role",
+            "kind": {
+              "Enum": [
+                "manager",
+                "staff"
+              ]
+            }
+          }
+        }
+      }
+    ],
+    "parameters": {
+      "Left": []
+    },
+    "nullable": [
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  "hash": "fbd2c9bef829dd99ae176e31dc174e5514771d71557b2a5be0fd5977a66d3ae3"
+}

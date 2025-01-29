@@ -1,0 +1,6 @@
+Makefile
+*.md
+*.postman_collection.json
+.env
+deploy
+architecture

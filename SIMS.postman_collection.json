@@ -1,0 +1,107 @@
+{
+	"info": {
+		"_postman_id": "13ed417e-3e22-464b-96b8-c6b713af98ba",
+		"name": "SIMS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30910395"
+	},
+	"item": [
+		{
+			"name": "sensors",
+			"item": [
+				{
+					"name": "/api/get_data",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/api/get_data",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"get_data"
+							],
+							"query": [
+								{
+									"key": "start_date",
+									"value": "2025-01-30T10:01:22.991",
+									"disabled": true
+								},
+								{
+									"key": "end_date",
+									"value": "2025-01-30T10:01:22.991",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/api/put_data",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"device_id\": \"Postman\",\n    \"temperature\": 36.4,\n    \"humidity\": 46.7,\n    \"timestamp\": \"2025-01-30T10:01:22.991\",\n    \"weight\": 2500.0\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/put_data",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"put_data"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/api/alerts",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "base_url",
+			"value": "http://127.0.0.1:8080",
+			"type": "string"
+		}
+	]
+}

@@ -1,0 +1,53 @@
+{
+  "db_name": "PostgreSQL",
+  "query": "SELECT * FROM iot_sensors_data AS sd WHERE sd.timestamp >= $1 AND sd.timestamp <= $2",
+  "describe": {
+    "columns": [
+      {
+        "ordinal": 0,
+        "name": "id",
+        "type_info": "Int4"
+      },
+      {
+        "ordinal": 1,
+        "name": "device_id",
+        "type_info": "Text"
+      },
+      {
+        "ordinal": 2,
+        "name": "temperature",
+        "type_info": "Float8"
+      },
+      {
+        "ordinal": 3,
+        "name": "humidity",
+        "type_info": "Float8"
+      },
+      {
+        "ordinal": 4,
+        "name": "timestamp",
+        "type_info": "Timestamp"
+      },
+      {
+        "ordinal": 5,
+        "name": "weight",
+        "type_info": "Float8"
+      }
+    ],
+    "parameters": {
+      "Left": [
+        "Timestamp",
+        "Timestamp"
+      ]
+    },
+    "nullable": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  "hash": "35cd8211132b17db7b1023f2b8932004db31ba1656928837783a1090cfdf4d42"
+}
